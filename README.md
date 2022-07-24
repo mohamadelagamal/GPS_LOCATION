@@ -15,3 +15,4 @@ https://user-images.githubusercontent.com/86564639/180627812-677e80b5-611c-44b9-
 * [Lifecycles](https://developer.android.com/topic/libraries/architecture/lifecycle)  - Create a UI that automatically responds to lifecycle events.
 * [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) - Build data objects that notify views when the underlying database changes.
 * [ViewModel ](https://developer.android.com/topic/libraries/architecture/viewmodel) 
+![CleanArchitecture](https://user-images.githubusercontent.com/86564639/180628065-b14312fc-baf2-499c-b339-4b2d0ffaee53.jpg)
