@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Map Pan</string>
+    <string name="accept">Accept</string>
+    <string name="deny">Deny</string>
+    <string name="permission_alert">Location permission is needed to get The restaurants around your location.</string>
+    <string name="location_permission_denied">Location Permission Denied</string>
+    <string name="google_play_services_alert">You need to install Google Play Services to use the App properly</string>
+    <string name="hello_blank_fragment">N/A</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="general_error">Something went wrong</string>
+    <string name="location_disabled">Location is Disabled, Do you want to enable it?</string>
+    <string name="enable">Enable</string>
+    <string name="ignore">Ignore</string>
+    <string name="enable_location">Enable location</string>
+</resources>

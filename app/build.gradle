@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+apply plugin: 'kotlin-android-extensions'
+//junitJacoco {
+//    jacocoVersion = '0.8.4' // type String
+//    includeNoLocationClasses = false // type boolean
+//    includeInstrumentationCoverageInMergedReport = false // type boolean
+//}
+android {
+    compileSdkVersion Android.compileSDK
+
+    defaultConfig {
+        applicationId Android.applicationId
+        minSdkVersion Android.minSDK
+        targetSdkVersion Android.targetSDK
+        versionCode Android.versionCode
+        versionName Android.versionName
+        testInstrumentationRunner "com.ramadan.challenge.ui.MyTestRunner"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    //Libs
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
+    implementation Libs.kotlinStdLib
+    implementation Libs.appCompat
+    implementation Libs.coreExt
+    implementation Libs.material
+    implementation Libs.constraintLayout
+    implementation Libs.rxVersion
+    implementation Libs.rxAndroid
+    implementation Libs.gson
+    implementation Libs.viewModel
+    implementation Libs.liveData
+   // implementation Libs.multidex
+    implementation Libs.fragmentKtx
+    implementation Libs.retrofit
+    implementation Libs.rxAdapter
+    implementation Libs.loggingInterceptor
+    implementation Libs.gsonConverter
+    implementation Libs.hiltAndroid
+    implementation Libs.googleMap
+    implementation Libs.locationServices
+    kapt Libs.hiltAndroidCompiler
+    implementation Libs.timber
+    implementation Libs.permissionsDispatcher
+    kapt Libs.permissionsDispatcherProcessor
+  //  implementation 'com.android.support:multidex:2.0.1' //enter the latest multidex version
+
+    //Testing Libs
+    testImplementation TestLibs.junit
+    testImplementation TestLibs.mockito
+    testImplementation TestLibs.archCoreTesting
+    androidTestImplementation TestLibs.espresso
+    androidTestImplementation TestLibs.testRunner
+    androidTestImplementation TestLibs.rules
+    androidTestImplementation TestLibs.truth
+    androidTestImplementation TestLibs.junitExt
+    androidTestImplementation TestLibs.mockitoAndroid
+    androidTestImplementation TestLibs.hiltAndroidTest
+    kaptAndroidTest Libs.hiltAndroidCompiler
+
+//    testImplementation(project(":test-utils"))
+}
