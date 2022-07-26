@@ -10,6 +10,7 @@ https://user-images.githubusercontent.com/86564639/180627812-677e80b5-611c-44b9-
 * *  [PermissionsDispatcher ](https://github.com/permissions-dispatcher/PermissionsDispatcher) - PermissionsDispatcher provides a simple annotation-based API to handle runtime permissions.
 * *  [Timber](https://github.com/JakeWharton/timber) - This is a logger with a small, extensible API which provides utility on top of Android's normal Log class.
 * [Kotlin](https://kotlinlang.org/) 
+* [RxJava](https://github.com/ReactiveX/RxJava)
 * [MVVM](https://developer.android.com/jetpack/guide)
 * [Data Binding](https://developer.android.com/topic/libraries/data-binding/) -  Declaratively bind observable data to UI elements.
 * [Lifecycles](https://developer.android.com/topic/libraries/architecture/lifecycle)  - Create a UI that automatically responds to lifecycle events.
